@@ -34,14 +34,14 @@ const Home: NextPage = () => {
           <hr className="border-soft-blue opacity-25" />
 
           <div className="text-soft-blue flex text-[10px] items-center">
+            <div className="rounded-full border border-white w-5 h-5">
             <Image
               src={avatar}
               alt="An avatar of Jules Wyvern"
-              className="rounded-full border border-white"
-              style={{borderRadius: 9999, borderWidth: 1, marginRight: 8, borderColor: "white"}}
               width={"20px"}
               height={"20px"}
             />
+            </div>
             <span className="ml-2">Creation of</span>
             <span className="text-white hover-state">Jules Wyvern</span>
           </div>
