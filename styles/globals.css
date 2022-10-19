@@ -1,26 +1,56 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
+  --mainBG: hsl(217, 54%, 11%);
+  --cardBG: 216deg 50% 16%;
+  --white: 0deg 0% 100%;
+  --soft-blue: 215deg 51% 70%;
+  --cyan: 178 100% 50%;
+  --very-dark-blue-line: hsl(217, 55%, 10%);
+  --very-dark-blue: hsl(216, 57%, 11%);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+body {
+  background-color: var(--mainBG);
+  font-family: "Outfit", sans-serif;
+}
+.card {
+    box-shadow: 0px 20px 2px 10px var(--very-dark-blue-line),0px 20px 2px 30px var(--very-dark-blue);
+}
+
+.hover-state {
+  @apply cursor-pointer hover:text-cyan transition-colors
+}
+
+img:after {
+  background-color: cyan;
+  width: 100%;
+  height: 100%;
+}
+
+.card-image{
+  background-image: url('../public/images/image-equilibrium.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.card-image:after{
+  content: url("../public/images/icon-view.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 255, 255, 0.5);
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  opacity: 0;
+  transition: opacity .3s;
+  display: flex;
+}
+
+.card-image:hover::after{
+  opacity: 1;
 }
