@@ -1,13 +1,17 @@
 import type { NextPage } from "next";
+import Head from "next/head";
 import Image from "next/image";
 import avatar from "../public/images/image-avatar.png"
 const NFTpreviewCard: NextPage = () => {
   return (
     <>
-      <div className="grid place-items-center place-content-center my-10">
+    <Head>
+      <title>Equilibrium #3429</title>
+    </Head>
+      <main className="grid place-items-center place-content-center my-10">
         <div className="card p-2 bg-card min-w-[150px] max-w-[250px] rounded-lg flex flex-col gap-3">
           <div className="card-image rounded-lg aspect-[1/1] hover-state"></div>
-          <div className="text-white hover-state">Equilibrium #3429</div>
+          <h1 className="text-white hover-state">Equilibrium #3429</h1>
           <div className="text-soft-blue text-[13px]">
             Our Equilibrium collection promotes balance and calm.
           </div>
@@ -46,9 +50,9 @@ const NFTpreviewCard: NextPage = () => {
             <span className="text-white hover-state">&nbsp;Jules Wyvern</span>
           </div>
         </div>
-      </div>
+      </main>
 
-      <div className="text-soft-blue">
+      <footer className="text-soft-blue">
         Challenge by
         <a
           rel="noreferrer"
@@ -62,7 +66,7 @@ const NFTpreviewCard: NextPage = () => {
           Abd Sab
         </a>
         .
-      </div>
+      </footer>
     </>
   );
 };
