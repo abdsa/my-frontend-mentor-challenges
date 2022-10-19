@@ -43,7 +43,7 @@ const Home: NextPage = () => {
             />
             </div>
             <span className="ml-2">Creation of</span>
-            <span className="text-white hover-state">Jules Wyvern</span>
+            <span className="text-white hover-state">&nbsp;Jules Wyvern</span>
           </div>
         </div>
       </div>
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
           href="https://www.frontendmentor.io?ref=challenge"
           target="_blank"
         >
-          Frontend Mentor
+          &nbsp;Frontend Mentor
         </a>
         . Coded by{" "}
         <a href="#" className="text-cyan">
