@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Image from "next/image";
 import avatar from "../public/images/image-avatar.png"
-const Home: NextPage = () => {
+const NFTpreviewCard: NextPage = () => {
   return (
     <>
       <div className="grid place-items-center place-content-center my-10">
@@ -67,4 +67,4 @@ const Home: NextPage = () => {
   );
 };
 
-export default Home;
+export default NFTpreviewCard;
