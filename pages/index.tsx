@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Image from "next/image";
-
+import avatar from "../public/images/image-avatar.png"
 const Home: NextPage = () => {
   return (
     <>
@@ -35,7 +35,7 @@ const Home: NextPage = () => {
 
           <div className="text-soft-blue flex text-[10px] items-center">
             <Image
-              src="/../public/images/image-avatar.png"
+              src={avatar}
               alt="An avatar of Jules Wyvern"
               className="rounded-full border border-white"
               style={{borderRadius: 9999, borderWidth: 1, marginRight: 8, borderColor: "white"}}
