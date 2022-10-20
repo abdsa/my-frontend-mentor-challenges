@@ -19,6 +19,8 @@ module.exports = {
         "light-magenta": "hsl(var(--light-magenta))",
         "moderate-violet-chat-on-the-left": "hsl(var(--moderate-violet-chat-on-the-left))",
         "desaturated-ark-violet-chat-on-the-right": "hsl(var(--desaturated-ark-violet-chat-on-the-right))",
+        "very-light-magenta-radio-button-outline": "hsl(var(--very-light-magenta-radio-button-outline))",
+        "very-dark-desaturated-violet-submit-button-background": "hsl(var(--very-dark-desaturated-violet-submit-button-background))",
       }
     },
   },

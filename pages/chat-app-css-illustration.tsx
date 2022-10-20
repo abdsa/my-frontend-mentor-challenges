@@ -15,7 +15,7 @@ const ChatAppIllustration: NextPage = () => {
         <title>Dowlk</title>
       </Head>
       <main className="grid grid-cols-1 grid-rows-2 place-items-center lg:grid-cols-2 lg:grid-rows-1">
-        <div className="relative grid h-[450px] w-[200px] rounded-[20px] p-[8px] shadow-[9px_20px_40px_1px_rgb(0,0,0,0.1)]">
+        <div className="h-[49 0px] relative grid w-[230px] rounded-[20px] p-[8px] shadow-[9px_20px_40px_1px_rgb(0,0,0,0.1)]">
           <div className="notch absolute left-[28%] h-6 w-24 rounded-b-xl bg-white"></div>
           <div className="h-full w-full rounded-[15px] bg-light-grayish-violet-app-background">
             <div className="contact h-14 w-full rounded-t-[15px] rounded-b-[5px] bg-gradient-to-r from-light-violet to-light-magenta px-2 pt-5 text-white shadow-[0px_10px_10px_0px_rgb(0,0,0,0.1)]">
@@ -38,13 +38,13 @@ const ChatAppIllustration: NextPage = () => {
               </div>
             </div>
             <div className="grid gap-2 px-[7px] py-3 text-[7.5px]">
-              <div className="max-w-[130px] break-words rounded-[10px] rounded-bl-[5px] bg-[#ECE5F3] p-2 text-moderate-violet-chat-on-the-left">
+              <div className="max-h-[30px] max-w-[130px] break-words rounded-[10px] rounded-bl-[5px] bg-[#ECE5F3] pt-1 pb-[6px] pr-5 pl-2 text-moderate-violet-chat-on-the-left">
                 That sounds great. I&apos;d be happy with that.
               </div>
-              <div className="max-w-[130px] break-words rounded-[10px] rounded-bl-[5px] bg-[#ECE5F3] p-2 text-moderate-violet-chat-on-the-left">
+              <div className="max-h-[30px] max-w-[130px] break-words rounded-[10px] rounded-bl-[5px] bg-[#ECE5F3] pt-1 pb-[6px] pr-5 pl-2 text-moderate-violet-chat-on-the-left">
                 Could you send over some pictures of your dog, please?
               </div>
-              <div className="place-self-end grid grid-rows-1 grid-cols-3 gap-2 max-w-[130px]">
+              <div className="mt-2 grid max-w-[130px] grid-cols-3 grid-rows-1 gap-2 place-self-end">
                 <Image
                   src={dogImage1}
                   alt="a happy dog"
@@ -62,14 +62,48 @@ const ChatAppIllustration: NextPage = () => {
                 />
               </div>
 
-              <div className="max-w-[130px] place-self-end break-words rounded-[10px] rounded-br-[5px] bg-white p-2 shadow-lg">
+              <div className="max-w-[130px]  place-self-end break-words rounded-[10px] rounded-br-[5px] bg-white px-2 py-[6px] shadow-lg">
                 Here are a few pictures. She&apos;s a happy girl!
               </div>
-              <div className="max-w-[130px] place-self-end break-words rounded-[10px] rounded-br-[5px] bg-white p-2 shadow-lg">
+              <div className="max-w-[130px]  place-self-end break-words rounded-[10px] rounded-br-[5px] bg-white px-2 py-[6px] shadow-lg">
                 Can you make it?
               </div>
-              <div className="max-w-[130px] break-words rounded-[10px] rounded-bl-[5px] bg-[#ECE5F3] p-2 text-moderate-violet-chat-on-the-left">
-                She looks so happy! The time we discussed works. How long shall I take her out for?
+              <div className="mt-3 max-w-[130px]  break-words rounded-[10px] rounded-bl-[5px] bg-[#ECE5F3] p-2 text-moderate-violet-chat-on-the-left">
+                She looks so happy! The time we discussed works. How long shall
+                I take her out for?
+              </div>
+
+              <div className="grid max-w-[160px] grid-cols-2 grid-rows-1 place-items-center rounded-[10px] rounded-bl-[5px] bg-gradient-to-r from-light-magenta to-light-violet py-[6px] pr-3 pl-4 text-white">
+                <div className="flex items-center justify-between gap-2">
+                  <div className="h-3 w-3 rounded-full border border-very-light-magenta-radio-button-outline bg-transparent"></div>
+                  <span className="w-[60px] justify-self-start">
+                    30 minute walk
+                  </span>
+                </div>
+                <span className="place-self-end text-[13px] font-bold">
+                  $29
+                </span>
+              </div>
+              <div className="grid max-w-[160px] grid-cols-2 grid-rows-1 place-items-center rounded-[10px] rounded-bl-[5px] bg-gradient-to-r from-light-magenta to-light-violet py-[6px] pr-3 pl-4 text-white">
+                <div className="flex items-center justify-between gap-2 ">
+                  <div className="h-3 w-3 rounded-full border border-very-light-magenta-radio-button-outline bg-transparent"></div>
+                  <span className="w-[60px] justify-self-start">
+                    1 hour walk
+                  </span>
+                </div>
+                <span className="place-self-end text-[13px] font-bold">
+                  $49
+                </span>
+              </div>
+              <div className="flex">
+                <div className="mt-2 w-full rounded-full bg-white py-1 pr-2 text-gray-400">
+                  <div className="grid grid-cols-2 grid-rows-1 place-items-center">
+                    Type a message...
+                    <div className="relative h-6 w-6 justify-self-end rounded-full bg-very-dark-desaturated-violet-submit-button-background p-1">
+                    <div className="submit-arrow"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -116,6 +150,31 @@ const ChatAppIllustration: NextPage = () => {
             display: flex;
             align-items: center;
             justify-content: center;
+          }
+
+          .submit-arrow:after {
+            content: "";
+            width: 7px;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            border-radius: 5px;
+            top: 35%;
+            left: 35%;
+            transform: rotate(45deg);
+
+          }
+
+          .submit-arrow:before {
+            content: "";
+            width: 7px;
+            height: 1px;
+            background-color: white;
+            position: absolute;
+            border-radius: 5px;
+            top: 55%;
+            left: 35%;
+            transform: rotate(-45deg);
           }
         `}
       </style>
