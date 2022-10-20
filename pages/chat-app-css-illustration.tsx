@@ -15,8 +15,8 @@ const ChatAppIllustration: NextPage = () => {
         <title>Dowlk</title>
       </Head>
       <main className="grid h-screen w-screen grid-cols-1 place-items-center gap-3 lg:grid-cols-[500px,500px] lg:grid-rows-1 place-content-center overflow-">
-        <div className="absolute z-10 h-[45%] w-[33rem] rounded-b-[50rem] -left-[300px] self-start justify-self-start bg-gradient-to-b from-light-magenta to-light-violet lg:h-[90%] lg:left-0"></div>
-        <div className="absolute z-10 h-[45%] w-[33rem] rounded-t-[50rem] -right-[300px] self-end justify-self-end bg-gradient-to-b from-light-magenta to-light-violet opacity-10 lg:h-[90%] lg:right-0"></div>
+        <div className="absolute z-10 h-[45%] w-[40rem] rounded-b-[50rem] -left-[300px] self-start justify-self-start bg-gradient-to-b from-light-magenta to-light-violet lg:h-[90%] lg:left-0"></div>
+        <div className="absolute z-10 h-[45%] w-[40rem] rounded-t-[50rem] -right-[300px] self-end justify-self-end bg-gradient-to-b from-light-magenta to-light-violet opacity-10 lg:h-[90%] lg:right-0"></div>
         <div className="relative z-20 mt-20 grid w-[330px] scale-[0.8] rounded-[35px] bg-white p-[10px] shadow-[0px_10px_20px_5px_rgb(0,0,0,0.1)] lg:mt-0 lg:scale-[1]">
           <div className="notch absolute left-[25%] h-6 w-[50%] rounded-b-xl bg-white"></div>
           <div className="h-full w-full rounded-[25px] bg-light-grayish-violet-app-background">
