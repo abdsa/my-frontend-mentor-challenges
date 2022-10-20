@@ -14,9 +14,9 @@ const ChatAppIllustration: NextPage = () => {
       <Head>
         <title>Dowlk</title>
       </Head>
-      <main className="grid h-screen w-screen grid-cols-1 place-items-center gap-3 lg:grid-cols-[500px,500px] lg:grid-rows-1 place-content-center overflow-">
-        <div className="absolute z-10 h-[45%] w-[40rem] rounded-b-[50rem] -left-[300px] self-start justify-self-start bg-gradient-to-b from-light-magenta to-light-violet lg:h-[90%] lg:left-0"></div>
-        <div className="absolute z-10 h-[45%] w-[40rem] rounded-t-[50rem] -right-[300px] self-end justify-self-end bg-gradient-to-b from-light-magenta to-light-violet opacity-10 lg:h-[90%] lg:right-0"></div>
+      <main className="overflow- grid h-screen w-screen grid-cols-1 place-content-center place-items-center gap-3 lg:grid-cols-[500px,500px] lg:grid-rows-1">
+        <div className="absolute -left-[300px] z-10 h-[45%] w-[40rem] self-start justify-self-start rounded-b-[50rem] bg-gradient-to-b from-light-magenta to-light-violet lg:left-0 lg:h-[90%]"></div>
+        <div className="fixed -right-[300px] z-10 h-[45%] w-[40rem] self-end justify-self-end rounded-t-[50rem] bg-gradient-to-b from-light-magenta to-light-violet opacity-10 lg:right-0 lg:h-[90%]"></div>
         <div className="relative z-20 mt-20 grid w-[330px] scale-[0.8] rounded-[35px] bg-white p-[10px] shadow-[0px_10px_20px_5px_rgb(0,0,0,0.1)] lg:mt-0 lg:scale-[1]">
           <div className="notch absolute left-[25%] h-6 w-[50%] rounded-b-xl bg-white"></div>
           <div className="h-full w-full rounded-[25px] bg-light-grayish-violet-app-background">
@@ -114,7 +114,7 @@ const ChatAppIllustration: NextPage = () => {
           <h1 className="justify-start text-center text-[3rem] text-very-dark-desaturated-violet-main-heading lg:text-start">
             Simple booking
           </h1>
-          <p className="max-w-[clamp(45ch,50%,75ch)] px-3 text-center text-[1rem] text-dark-Grayish-violet-paragraph lg:text-start lg:p-0">
+          <p className="max-w-[clamp(45ch,50%,75ch)] px-3 text-center text-[1rem] text-dark-Grayish-violet-paragraph lg:p-0 lg:text-start">
             Stay in touch with our dog walkers through the chat interface. This
             makes it easy to discuss arrangements and make bookings. Once the
             walk has been completed you can rate your walker and book again all
@@ -145,7 +145,6 @@ const ChatAppIllustration: NextPage = () => {
           html {
             width: 100%;
             height: 100%;
-            overflow-x: hidden
           }
 
           body {
