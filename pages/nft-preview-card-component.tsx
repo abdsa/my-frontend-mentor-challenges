@@ -3,7 +3,7 @@ import styles from "../styles/n-p-c-c.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import avatar from "../public/n-p-c-c-images/image-avatar.png";
-import equilibrium from "../public/image-equilibrium.jpg"
+import equilibrium from "../public/image-equilibrium.jpg";
 
 const NFTpreviewCard: NextPage = () => {
   return (
@@ -20,7 +20,9 @@ const NFTpreviewCard: NextPage = () => {
             className={`card-image ${styles.hoverState} aspect-[1/1] rounded-lg`}
           ></div>
           <Image src={equilibrium} alt={""}></Image>
-          <h1 className={`${styles.hoverState} text-white`}>Equilibrium #3429</h1>
+          <h1 className={`${styles.hoverState} text-white`}>
+            Equilibrium #3429
+          </h1>
           <div className="text-[13px] text-soft-blue">
             Our Equilibrium collection promotes balance and calm.
           </div>
@@ -56,7 +58,9 @@ const NFTpreviewCard: NextPage = () => {
               />
             </div>
             <span className="ml-2">Creation of</span>
-            <span className={`${styles.hoverState} text-white`}>&nbsp;Jules Wyvern</span>
+            <span className={`${styles.hoverState} text-white`}>
+              &nbsp;Jules Wyvern
+            </span>
           </div>
         </div>
       </main>
@@ -101,6 +105,30 @@ const NFTpreviewCard: NextPage = () => {
             display: flex;
             justify-content: center;
             align-items: center;
+          }
+
+          .card-image {
+            background-image: url("../public/image-equilibrium.jpg");
+            background-size: cover;
+            position: relative;
+          }
+
+          .card-image:after {
+            content: url("../public/n-p-c-c-images/icon-view.svg");
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(0, 255, 255, 0.5);
+            justify-content: center;
+            align-items: center;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            display: flex;
+          }
+
+          .card-image:hover::after {
+            opacity: 1;
           }
         `}
       </style>
