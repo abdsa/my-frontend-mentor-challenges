@@ -16,9 +16,9 @@ const NFTpreviewCard: NextPage = () => {
           className={`${styles.card} flex max-w-[250px] scale-[1.5] flex-col gap-3 rounded-lg bg-card p-2`}
         >
           <div
-            className={`${styles.cardImage}  hover-state" aspect-[1/1] rounded-lg`}
+            className={`${styles.cardImage} ${styles.hoverState} aspect-[1/1] rounded-lg`}
           ></div>
-          <h1 className="hover-state text-white">Equilibrium #3429</h1>
+          <h1 className={`${styles.hoverState} text-white`}>Equilibrium #3429</h1>
           <div className="text-[13px] text-soft-blue">
             Our Equilibrium collection promotes balance and calm.
           </div>
@@ -54,7 +54,7 @@ const NFTpreviewCard: NextPage = () => {
               />
             </div>
             <span className="ml-2">Creation of</span>
-            <span className="hover-state text-white">&nbsp;Jules Wyvern</span>
+            <span className={`${styles.hoverState} text-white`}>&nbsp;Jules Wyvern</span>
           </div>
         </div>
       </main>
