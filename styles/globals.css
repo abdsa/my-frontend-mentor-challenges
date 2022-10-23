@@ -1,8 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
 .card-image {
-    background-image: url("../public/image-equilibrium.jpg");
+    background-image: url("../public/n-p-c-c-images/image-equilibrium.jpg");
     background-size: cover;
     position: relative;
   }
