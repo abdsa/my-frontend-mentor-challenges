@@ -17,7 +17,7 @@
   position: relative;
 }
 
-.cardImage:after {
+.card-image:after {
   content: url("../public/n-p-c-c-images/icon-view.svg");
   position: absolute;
   width: 100%;
@@ -31,6 +31,6 @@
   display: flex;
 }
 
-.cardImage:hover::after {
+.card-image:hover::after {
   opacity: 1;
 }
