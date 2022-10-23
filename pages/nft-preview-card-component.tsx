@@ -3,6 +3,7 @@ import styles from "../styles/n-p-c-c.module.css";
 import Head from "next/head";
 import Image from "next/image";
 import avatar from "../public/n-p-c-c-images/image-avatar.png";
+import equilibrium from "../public/image-equilibrium.jpg"
 
 const NFTpreviewCard: NextPage = () => {
   return (
@@ -18,6 +19,7 @@ const NFTpreviewCard: NextPage = () => {
           <div
             className={`${styles.cardImage} ${styles.hoverState} aspect-[1/1] rounded-lg`}
           ></div>
+          <Image src={equilibrium} alt={""}></Image>
           <h1 className={`${styles.hoverState} text-white`}>Equilibrium #3429</h1>
           <div className="text-[13px] text-soft-blue">
             Our Equilibrium collection promotes balance and calm.
