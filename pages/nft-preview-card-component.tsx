@@ -11,7 +11,7 @@ const NFTpreviewCard: NextPage = () => {
         <title>Equilibrium #3429</title>
       </Head>
 
-      <main className={`my-10 grid place-content-center place-items-center`}>
+      <main className={`m-10 grid place-content-center place-items-center`}>
         <div
           className={`${styles.card} flex max-w-[250px] scale-[1.5] flex-col gap-3 rounded-lg bg-card p-2`}
         >
