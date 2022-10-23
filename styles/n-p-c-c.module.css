@@ -11,7 +11,7 @@
   @apply cursor-pointer hover:text-cyan transition-colors;
 }
 
-.cardImage {
+.card-image {
   background-image: url("../public/image-equilibrium.jpg");
   background-size: cover;
   position: relative;

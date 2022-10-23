@@ -17,7 +17,7 @@ const NFTpreviewCard: NextPage = () => {
           className={`${styles.card} flex max-w-[250px] scale-[1.5] flex-col gap-3 rounded-lg bg-card p-2`}
         >
           <div
-            className={`${styles.cardImage} ${styles.hoverState} aspect-[1/1] rounded-lg`}
+            className={`card-image ${styles.hoverState} aspect-[1/1] rounded-lg`}
           ></div>
           <Image src={equilibrium} alt={""}></Image>
           <h1 className={`${styles.hoverState} text-white`}>Equilibrium #3429</h1>
