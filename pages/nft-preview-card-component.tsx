@@ -13,7 +13,7 @@ const NFTpreviewCard: NextPage = () => {
 
       <main className={`my-10 grid place-content-center place-items-center`}>
         <div
-          className={`${styles.card} flex min-w-[150px] max-w-[250px] scale-[1.5] flex-col gap-3 rounded-lg bg-card p-2`}
+          className={`${styles.card} flex max-w-[250px] scale-[1.5] flex-col gap-3 rounded-lg bg-card p-2`}
         >
           <div
             className={`${styles.cardImage}  hover-state" aspect-[1/1] rounded-lg`}

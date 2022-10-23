@@ -13,7 +13,6 @@
 
 .cardImage {
   background-image: url("../public/n-p-c-c-images/image-equilibrium.jpg");
-  background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
