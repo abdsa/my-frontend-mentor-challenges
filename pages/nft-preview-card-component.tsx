@@ -11,19 +11,23 @@ const NFTpreviewCard: NextPage = () => {
         <title>Equilibrium #3429</title>
       </Head>
 
-      <main className={`m-10 grid place-content-center place-items-center`}>
+      <main
+        className={`m-10 grid place-content-center place-items-center`}
+      >
         <div
-          className={`${styles.card} flex max-w-[250px] scale-[1.5] flex-col gap-3 rounded-lg bg-card p-2`}
+          className={`${styles.card} flex max-w-[360px] flex-col gap-3 rounded-lg bg-card p-2`}
         >
           <div
             className={`card-image ${styles.hoverState} aspect-[1/1] rounded-lg`}
           ></div>
-          <h1 className={`${styles.hoverState} text-white`}>Equilibrium #3429</h1>
-          <div className="text-[13px] text-soft-blue">
+          <h1 className={`${styles.hoverState} text-[2rem] text-white`}>
+            Equilibrium #3429
+          </h1>
+          <div className="text-[1rem] text-soft-blue">
             Our Equilibrium collection promotes balance and calm.
           </div>
           <div className="flex justify-between">
-            <div className="flex items-center gap-1 text-[10px] font-bold text-cyan">
+            <div className="flex items-center gap-1 text-[14px] font-bold text-cyan">
               <svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M11 10.216 5.5 18 0 10.216l5.5 3.263 5.5-3.262ZM5.5 0l5.496 9.169L5.5 12.43 0 9.17 5.5 0Z"
@@ -32,7 +36,7 @@ const NFTpreviewCard: NextPage = () => {
               </svg>{" "}
               0.041 ETH
             </div>
-            <div className="flex items-center gap-1 text-[10px] text-soft-blue">
+            <div className="flex items-center gap-1 text-[14px] text-soft-blue">
               <svg width="17" height="17" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M8.305 2.007a6.667 6.667 0 1 0 0 13.334 6.667 6.667 0 0 0 0-13.334Zm2.667 7.334H8.305a.667.667 0 0 1-.667-.667V6.007a.667.667 0 0 1 1.334 0v2h2a.667.667 0 0 1 0 1.334Z"
@@ -44,7 +48,7 @@ const NFTpreviewCard: NextPage = () => {
           </div>
           <hr className="border-soft-blue opacity-25" />
 
-          <div className="flex items-center text-[10px] text-soft-blue">
+          <div className="flex items-center text-[14px] text-soft-blue">
             <div className="h-5 w-5 rounded-full border border-white">
               <Image
                 src={avatar}
@@ -54,7 +58,9 @@ const NFTpreviewCard: NextPage = () => {
               />
             </div>
             <span className="ml-2">Creation of</span>
-            <span className={`${styles.hoverState} text-white`}>&nbsp;Jules Wyvern</span>
+            <span className={`${styles.hoverState} text-white`}>
+              &nbsp;Jules Wyvern
+            </span>
           </div>
         </div>
       </main>
